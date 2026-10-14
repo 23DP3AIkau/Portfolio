@@ -1,6 +1,6 @@
 # Portfolio
 
-My personal portfolio: 
+My personal portfolio: [LINK](<https://23dp3aikau.github.io/Portfolio/>)
 
 It shows my projects, experience and skills in English and Latvian. The site is plain HTML, CSS and JavaScript with no frameworks and no build step, hosted on GitHub Pages.
 
