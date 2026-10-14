@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alans Ikaunieks | Portfolio</title>
+  <meta name="description" content="Programming student in Riga, building web apps with Laravel, Vue and MySQL.">
+  <meta property="og:title" content="Alans Ikaunieks | Portfolio">
+  <meta property="og:description" content="Programming student in Riga, building web apps with Laravel, Vue and MySQL.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#15181b" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400..700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+  <script src="assets/js/data.js" defer></script>
+  <script src="assets/js/ui.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="./">Alans Ikaunieks</a>
+      <nav class="nav" aria-label="Main">
+        <a href="#projects" data-i18n="navProjects">Projects</a>
+        <a href="#experience" data-i18n="navExperience">Experience</a>
+        <a href="#skills" data-i18n="navSkills">Skills</a>
+      </nav>
+      <div class="header-tools">
+        <button class="lang-toggle" type="button">LV</button>
+        <button class="theme-toggle" type="button" aria-label="Switch theme"></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="wrap hero" aria-labelledby="hero-name">
+      <div class="hero-photo" data-photo hidden></div>
+      <h1 class="hero-name" id="hero-name">Alans Ikaunieks</h1>
+      <p class="hero-role" data-role></p>
+      <p class="hero-intro" data-intro></p>
+      <p class="hero-availability" data-availability></p>
+      <div class="actions">
+        <a class="btn btn-primary" data-email-link href="#" data-i18n="emailMe">Email me</a>
+        <a class="btn" data-github-link href="#">GitHub</a>
+        <a class="btn" data-linkedin-link href="#">LinkedIn</a>
+      </div>
+      <noscript><p data-i18n="noscript">Turn on JavaScript to see the projects.</p></noscript>
+    </section>
+
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="wrap section-grid">
+        <h2 class="section-title" id="projects-title" data-i18n="headProjects">Projects</h2>
+        <div class="section-body project-list" data-projects></div>
+      </div>
+    </section>
+
+    <section class="section" id="experience" aria-labelledby="exp-title">
+      <div class="wrap section-grid">
+        <h2 class="section-title" id="exp-title" data-i18n="headExperience">Experience</h2>
+        <div class="section-body">
+          <ol class="timeline" data-timeline></ol>
+          <p class="section-intro about" data-about></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="wrap section-grid">
+        <h2 class="section-title" id="skills-title" data-i18n="headSkills">Skills</h2>
+        <div class="section-body skills" data-skills></div>
+      </div>
+    </section>
+
+    <section class="section" id="three-d" aria-labelledby="ugc-title">
+      <div class="wrap section-grid">
+        <h2 class="section-title" id="ugc-title" data-i18n="head3d">3D work</h2>
+        <div class="section-body">
+          <p class="section-intro" data-ugc-intro></p>
+          <details class="fold">
+            <summary><span class="fold-closed" data-i18n="show3d">Show the models</span><span class="fold-open" data-i18n="hide3d">Hide the models</span></summary>
+            <ul class="ugc-grid" data-ugc></ul>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© <span data-year>2026</span> Alans Ikaunieks</p>
+      <p class="footer-links"><a data-email-link href="#" data-i18n="email">Email</a><a data-github-link href="#">GitHub</a></p>
+      <p class="footer-note" data-i18n="footer">Written in HTML, CSS and JavaScript. Hosted on GitHub Pages.</p>
+    </div>
+  </footer>
+</body>
+</html>
